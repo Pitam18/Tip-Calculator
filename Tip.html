@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="TipStyle.css">
+</head>
+<body>
+       <div id="container">
+       	<h1>Tip Calculator</h1>
+       	<div id="calculator">
+
+       		<form>
+       			<p>How much is your Bill?</p>
+       			Rs.<input id="billamt" type="text" placeholder="Bill Amount">
+
+       			<p>How is the Service?</p>
+       			<select id="servicequal">
+       				<option disabled selected value="0">--Choose an option --</option>
+       				<option value="0.15">15&#37;&#45;Outstanding</option>
+       				<option value="0.10">10&#37;&#45;Good</option>
+       				<option value="0.05">5&#37;&#45;It was OK</option>
+       			</select>
+       		</form>
+
+       		<p>How many people are sharing the bill</p>
+       		<input id="peopleamt" type="text" placeholder="Number of people">&nbsp &nbsp People<button type="button" id="calculate">Calculate!</button>
+
+       	</div>
+         
+         <div id="totalTip">
+         	<sup>Rs.</sup><span id="tip">0.00</span>
+         	<small id="each">each</small>
+         </div>
+     </div>
+<footer>&copy; Copyright 2021 Pitam</footer>
+
+</body>
+<script type="text/javascript" src="TipScript.js"></script>
+</html>
